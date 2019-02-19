@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		651409C32214A30100316A9D /* GameType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651409C22214A30100316A9D /* GameType.swift */; };
+		651409C52214A5D300316A9D /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651409C42214A5D300316A9D /* Player.swift */; };
+		651409C72214A7CE00316A9D /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651409C62214A7CE00316A9D /* Board.swift */; };
+		651409C92214A7FC00316A9D /* Play.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651409C82214A7FC00316A9D /* Play.swift */; };
 		65815272220F807C0016FE70 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65815271220F807C0016FE70 /* AppDelegate.swift */; };
 		65815274220F807C0016FE70 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 65815273220F807C0016FE70 /* GameScene.sks */; };
 		65815276220F807C0016FE70 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 65815275220F807C0016FE70 /* Actions.sks */; };
@@ -15,6 +19,16 @@
 		6581527C220F807D0016FE70 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6581527B220F807D0016FE70 /* Assets.xcassets */; };
 		6581527F220F807D0016FE70 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6581527D220F807D0016FE70 /* Main.storyboard */; };
 		6581528B220F807D0016FE70 /* EscobaMacTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6581528A220F807D0016FE70 /* EscobaMacTests.swift */; };
+		65815296220F81580016FE70 /* GameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65815295220F81580016FE70 /* GameManager.swift */; };
+		65815298220F816E0016FE70 /* Hand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65815297220F816E0016FE70 /* Hand.swift */; };
+		6581529A220F817B0016FE70 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65815299220F817B0016FE70 /* Card.swift */; };
+		6581529C220F82A80016FE70 /* Palo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6581529B220F82A80016FE70 /* Palo.swift */; };
+		6581529E220F84CB0016FE70 /* BaseCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6581529D220F84CB0016FE70 /* BaseCard.swift */; };
+		658152A022135C790016FE70 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6581529F22135C790016FE70 /* Errors.swift */; };
+		658152A222135FA80016FE70 /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658152A122135FA80016FE70 /* Deck.swift */; };
+		658152A42213604C0016FE70 /* EscobaCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658152A32213604C0016FE70 /* EscobaCard.swift */; };
+		658152A7221362860016FE70 /* DeckType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658152A6221362860016FE70 /* DeckType.swift */; };
+		658152A9221362A30016FE70 /* DeckFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658152A8221362A30016FE70 /* DeckFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +42,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		651409C22214A30100316A9D /* GameType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameType.swift; sourceTree = "<group>"; };
+		651409C42214A5D300316A9D /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		651409C62214A7CE00316A9D /* Board.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
+		651409C82214A7FC00316A9D /* Play.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Play.swift; sourceTree = "<group>"; };
 		6581526E220F807C0016FE70 /* EscobaMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EscobaMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65815271220F807C0016FE70 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		65815273220F807C0016FE70 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -41,6 +59,16 @@
 		65815286220F807D0016FE70 /* EscobaMacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EscobaMacTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6581528A220F807D0016FE70 /* EscobaMacTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EscobaMacTests.swift; sourceTree = "<group>"; };
 		6581528C220F807D0016FE70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65815295220F81580016FE70 /* GameManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameManager.swift; sourceTree = "<group>"; };
+		65815297220F816E0016FE70 /* Hand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hand.swift; sourceTree = "<group>"; };
+		65815299220F817B0016FE70 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		6581529B220F82A80016FE70 /* Palo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Palo.swift; sourceTree = "<group>"; };
+		6581529D220F84CB0016FE70 /* BaseCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCard.swift; sourceTree = "<group>"; };
+		6581529F22135C790016FE70 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		658152A122135FA80016FE70 /* Deck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deck.swift; sourceTree = "<group>"; };
+		658152A32213604C0016FE70 /* EscobaCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EscobaCard.swift; sourceTree = "<group>"; };
+		658152A6221362860016FE70 /* DeckType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckType.swift; sourceTree = "<group>"; };
+		658152A8221362A30016FE70 /* DeckFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +115,18 @@
 				65815275220F807C0016FE70 /* Actions.sks */,
 				65815277220F807C0016FE70 /* GameScene.swift */,
 				65815279220F807C0016FE70 /* ViewController.swift */,
+				65815297220F816E0016FE70 /* Hand.swift */,
+				6581529F22135C790016FE70 /* Errors.swift */,
+				651409C22214A30100316A9D /* GameType.swift */,
+				65815299220F817B0016FE70 /* Card.swift */,
+				651409C82214A7FC00316A9D /* Play.swift */,
+				651409C62214A7CE00316A9D /* Board.swift */,
+				658152A32213604C0016FE70 /* EscobaCard.swift */,
+				6581529D220F84CB0016FE70 /* BaseCard.swift */,
+				651409C42214A5D300316A9D /* Player.swift */,
+				6581529B220F82A80016FE70 /* Palo.swift */,
+				65815295220F81580016FE70 /* GameManager.swift */,
+				658152A5221362730016FE70 /* Deck */,
 				6581527B220F807D0016FE70 /* Assets.xcassets */,
 				6581527D220F807D0016FE70 /* Main.storyboard */,
 				65815280220F807D0016FE70 /* Info.plist */,
@@ -102,6 +142,16 @@
 				6581528C220F807D0016FE70 /* Info.plist */,
 			);
 			path = EscobaMacTests;
+			sourceTree = "<group>";
+		};
+		658152A5221362730016FE70 /* Deck */ = {
+			isa = PBXGroup;
+			children = (
+				658152A122135FA80016FE70 /* Deck.swift */,
+				658152A6221362860016FE70 /* DeckType.swift */,
+				658152A8221362A30016FE70 /* DeckFactory.swift */,
+			);
+			path = Deck;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,7 +257,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				6581527A220F807C0016FE70 /* ViewController.swift in Sources */,
+				6581529A220F817B0016FE70 /* Card.swift in Sources */,
+				658152A222135FA80016FE70 /* Deck.swift in Sources */,
+				65815298220F816E0016FE70 /* Hand.swift in Sources */,
+				65815296220F81580016FE70 /* GameManager.swift in Sources */,
+				6581529C220F82A80016FE70 /* Palo.swift in Sources */,
+				651409C92214A7FC00316A9D /* Play.swift in Sources */,
+				658152A7221362860016FE70 /* DeckType.swift in Sources */,
 				65815278220F807C0016FE70 /* GameScene.swift in Sources */,
+				658152A9221362A30016FE70 /* DeckFactory.swift in Sources */,
+				651409C32214A30100316A9D /* GameType.swift in Sources */,
+				658152A42213604C0016FE70 /* EscobaCard.swift in Sources */,
+				6581529E220F84CB0016FE70 /* BaseCard.swift in Sources */,
+				658152A022135C790016FE70 /* Errors.swift in Sources */,
+				651409C52214A5D300316A9D /* Player.swift in Sources */,
+				651409C72214A7CE00316A9D /* Board.swift in Sources */,
 				65815272220F807C0016FE70 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
