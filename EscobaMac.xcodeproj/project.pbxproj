@@ -29,6 +29,7 @@
 		658152A42213604C0016FE70 /* EscobaCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658152A32213604C0016FE70 /* EscobaCard.swift */; };
 		658152A7221362860016FE70 /* DeckType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658152A6221362860016FE70 /* DeckType.swift */; };
 		658152A9221362A30016FE70 /* DeckFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658152A8221362A30016FE70 /* DeckFactory.swift */; };
+		65C22CFB221CBD5C00DDADAF /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C22CFA221CBD5B00DDADAF /* Team.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		658152A32213604C0016FE70 /* EscobaCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EscobaCard.swift; sourceTree = "<group>"; };
 		658152A6221362860016FE70 /* DeckType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckType.swift; sourceTree = "<group>"; };
 		658152A8221362A30016FE70 /* DeckFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckFactory.swift; sourceTree = "<group>"; };
+		65C22CFA221CBD5B00DDADAF /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +126,7 @@
 				658152A32213604C0016FE70 /* EscobaCard.swift */,
 				6581529D220F84CB0016FE70 /* BaseCard.swift */,
 				651409C42214A5D300316A9D /* Player.swift */,
+				65C22CFA221CBD5B00DDADAF /* Team.swift */,
 				6581529B220F82A80016FE70 /* Palo.swift */,
 				65815295220F81580016FE70 /* GameManager.swift */,
 				658152A5221362730016FE70 /* Deck */,
@@ -256,6 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65C22CFB221CBD5C00DDADAF /* Team.swift in Sources */,
 				6581527A220F807C0016FE70 /* ViewController.swift in Sources */,
 				6581529A220F817B0016FE70 /* Card.swift in Sources */,
 				658152A222135FA80016FE70 /* Deck.swift in Sources */,

@@ -16,20 +16,29 @@ class GameManager {
     var deck: Deck<Card>
     var gameType: GameType
     var board: Board
+    var teams: [Team]
     
     weak var delegate: UpdateUIDelegate?
     
-    init(gameType: GameType) {
+    init(gameType: GameType, gameTeams: [Team]) {
         switch gameType {
         case .escoba:
             self.gameType = gameType
             self.deck = DeckFactory().shared().getDeck(DeckType: .escoba)
             board = Board()
             board.addCards(cardsToAdd: deck.drawCards(amount: 4))
+            teams = gameTeams
         }
     }
     
-    private func newGame(gameType: GameType) {
+    func startGame() {
+        switch self.gameType {
+        case .escoba:
+            newEscobaGame()
+        }
+    }
+    
+    private func newEscobaGame(){
         
     }
     
