@@ -120,14 +120,11 @@
 				65815297220F816E0016FE70 /* Hand.swift */,
 				6581529F22135C790016FE70 /* Errors.swift */,
 				651409C22214A30100316A9D /* GameType.swift */,
-				65815299220F817B0016FE70 /* Card.swift */,
+				65C79E47221DB7A900F61000 /* Card */,
 				651409C82214A7FC00316A9D /* Play.swift */,
 				651409C62214A7CE00316A9D /* Board.swift */,
-				658152A32213604C0016FE70 /* EscobaCard.swift */,
-				6581529D220F84CB0016FE70 /* BaseCard.swift */,
 				651409C42214A5D300316A9D /* Player.swift */,
 				65C22CFA221CBD5B00DDADAF /* Team.swift */,
-				6581529B220F82A80016FE70 /* Palo.swift */,
 				65815295220F81580016FE70 /* GameManager.swift */,
 				658152A5221362730016FE70 /* Deck */,
 				6581527B220F807D0016FE70 /* Assets.xcassets */,
@@ -155,6 +152,17 @@
 				658152A8221362A30016FE70 /* DeckFactory.swift */,
 			);
 			path = Deck;
+			sourceTree = "<group>";
+		};
+		65C79E47221DB7A900F61000 /* Card */ = {
+			isa = PBXGroup;
+			children = (
+				6581529B220F82A80016FE70 /* Palo.swift */,
+				65815299220F817B0016FE70 /* Card.swift */,
+				658152A32213604C0016FE70 /* EscobaCard.swift */,
+				6581529D220F84CB0016FE70 /* BaseCard.swift */,
+			);
+			path = Card;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

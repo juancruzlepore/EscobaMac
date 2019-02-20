@@ -708,6 +708,52 @@
                     <view key="view" wantsLayer="YES" id="m2S-Jp-Qdl" customClass="SKView">
                         <rect key="frame" x="0.0" y="0.0" width="800" height="429"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="HwL-hn-ECU">
+                                <rect key="frame" x="365" y="381" width="70" height="32"/>
+                                <buttonCell key="cell" type="push" title="Start" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="NAk-9f-aeM">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="startGame:" target="XfG-lQ-9wD" id="THC-7C-jmU"/>
+                                </connections>
+                            </button>
+                            <scrollView wantsLayer="YES" autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vih-cx-8SR">
+                                <rect key="frame" x="20" y="61" width="760" height="307"/>
+                                <clipView key="contentView" id="Rmb-fk-XnX">
+                                    <rect key="frame" x="1" y="1" width="758" height="305"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <collectionView id="Wyt-ny-ro0">
+                                            <rect key="frame" x="0.0" y="0.0" width="758" height="158"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                                            <collectionViewFlowLayout key="collectionViewLayout" minimumInteritemSpacing="10" minimumLineSpacing="10" id="RNu-nq-Jhl">
+                                                <size key="itemSize" width="50" height="50"/>
+                                            </collectionViewFlowLayout>
+                                            <color key="primaryBackgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        </collectionView>
+                                    </subviews>
+                                </clipView>
+                                <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="evL-aA-AvR">
+                                    <rect key="frame" x="1" y="258" width="748" height="16"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                                <scroller key="verticalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="2lI-OQ-ifv">
+                                    <rect key="frame" x="234" y="1" width="15" height="143"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                            </scrollView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="Vih-cx-8SR" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="8Hu-rL-rPk"/>
+                            <constraint firstItem="Vih-cx-8SR" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="AaD-nL-7gZ"/>
+                            <constraint firstItem="Vih-cx-8SR" firstAttribute="centerY" secondItem="m2S-Jp-Qdl" secondAttribute="centerY" id="H5H-iu-JpA"/>
+                            <constraint firstItem="HwL-hn-ECU" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="20" id="NVx-ua-Yr6"/>
+                            <constraint firstAttribute="trailing" secondItem="Vih-cx-8SR" secondAttribute="trailing" constant="20" id="TjQ-Dq-yyF"/>
+                            <constraint firstItem="HwL-hn-ECU" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="cEj-O8-U2e"/>
+                            <constraint firstItem="Vih-cx-8SR" firstAttribute="top" secondItem="HwL-hn-ECU" secondAttribute="bottom" constant="20" id="e2H-9T-yWU"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="skView" destination="m2S-Jp-Qdl" id="qux-te-cT3"/>

@@ -10,12 +10,24 @@ import Cocoa
 import SpriteKit
 import GameplayKit
 
-class ViewController: NSViewController {
-
+class ViewController: NSViewController, UpdateUIDelegate {
+    
     @IBOutlet var skView: SKView!
+    
+    var gameManager: GameManager?
+    
+    @IBAction func startGame(_ sender: NSButton) {
+        gameManager?.startGame()
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let aiPlayer = Player(name: "AI")
+        let humanPlayer = Player(name: "human")
+        let aiTeam = Team([aiPlayer])
+        let humanTeam = Team([humanPlayer])
+        gameManager = GameManager(gameType: .escoba, gameTeams: [aiTeam, humanTeam])
+        gameManager?.delegate = self
         
         // Load 'GameScene.sks' as a GKScene. This provides gameplay related content
         // including entities and graphs.
@@ -42,6 +54,12 @@ class ViewController: NSViewController {
                 }
             }
         }
+        
+        
+    }
+    
+    func updateUI(_ hands: [[Card]], _ board: Board) {
+        
     }
 }
 
